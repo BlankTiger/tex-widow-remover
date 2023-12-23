@@ -75,5 +75,5 @@ fn fix_widows(t: &str) -> String {
             fixed.push_str(word);
         }
     }
-    fixed
+    fixed.strip_suffix('\n').unwrap().to_string()
 }
