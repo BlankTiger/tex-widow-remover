@@ -36,12 +36,14 @@ fn main() {
     }
 }
 
-const DEWIDOWIZE_KEYWORDS: [&str; 5] = [
+const DEWIDOWIZE_KEYWORDS: [&str; 7] = [
     r"\section",
     r"\subsection",
     r"\subsubsection",
     r"\caption",
     r"\footnote",
+    r"\textbf",
+    r"\textit",
 ];
 
 fn fix_widows(t: &str) -> String {
